@@ -15,7 +15,7 @@
 		- in caso $a > 1$ allora **converge**
 		- in caso $a \leq 1$ allora **diverge positivamente**
 
-### Criteri per stabilire rapporto
+### Criteri per stabilire carattere
 
 - Disequazione $a_n > 0$
 	- in caso sia a termini positivi/negativi (o definitivamente positivi/negativi) allora **converge** o **diverge**
