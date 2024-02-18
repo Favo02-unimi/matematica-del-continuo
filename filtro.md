@@ -12,7 +12,7 @@ _Esempio:_ $2^x -2^{2-x} -3 > 0$, $sin(x)^2 + 2sin(x) +1 \leq 0$
 
 ### Disequazioni esponenziali/logaritmiche
 
-_Esempio:_ $log_{2}{4x} -1 < 0$ 
+_Esempio:_ $log_{2}{4x} -1 < 0$
 - isolare logaritmo/esponenziale
 - trasformare attraverso formula di trasformazione da logaritmo ad esponenziale e viceversa:
 - $log_a(b) = c$ equivalente a $a^c = b$
@@ -23,6 +23,16 @@ _Esempio:_ $log_{2}{4x} -1 < 0$
 _Esempio:_ $2^x < 2^4$ (la base è uguale da entrambe le parti)
 _Non valido:_ $2^x + 2^2 < 2^4$ (la base non è uguale!)
 - risolvere la disequazione ignorando la base ($x < 4$)
+
+### Disequazioni trigonometriche
+
+_Esempio:_ $cos x \geq 1$
+- $cos$ e $sin$ hanno dominio $-1 < x < 1$
+- $cos x = 1$ quando $x = 0 + 2k\pi$
+- $cos x = -1$ quando $x = \pi + 2k\pi$
+- $sin x = 1$ quando $x = \pi/2 + 2k\pi$
+- $sin x = -1$ quando $x = 3\pi/2 + 2k\pi$
+
 ### Contenuto insieme
 
 _Esempio:_ $B = \{ | x-1 | 0 < x < 2 \}$
