@@ -33,9 +33,26 @@ _Esempio:_ $cos x \geq 1$
 - $sin x = 1$ quando $x = \pi/2 + 2k\pi$
 - $sin x = -1$ quando $x = 3\pi/2 + 2k\pi$
 
+### Disequazioni con valore assoluto
+
+Esempio: $|x-1| + 2|x| + x^2 - 2x + 1 \geq 0$
+- se moltiplicati:
+	- ignorare elementi nel valore assoluto (non interferiscono col calcolo del segno)
+- se sommati:
+	- sistema con tutti i casi del valore assoluto
+	- unione dei risultati
+
 ### Contenuto insieme
 
 _Esempio:_ $B = \{ | x-1 | 0 < x < 2 \}$
 - calcolare agli estremi (NB: questi valori non sono inclusi nel codominio)
 - calcolare per valori "furbi" interni (che annullano l'equazione, con frazioni, ...)
 
+### Aumento/Rapporto
+
+_Esempio: se raddoppio il lato di un triangolo equilatero, di quanto aumenta la sua area?_
+- aumenta: soltanto la differenza tra $vecchia$ e $nuova$
+- rapporto: il rapporto tra $vecchia$ e $nuova$
+- trucchi utili:
+	- triangolo equilatero: usare teorema di Pitagora per trovare altezza
+		- $a^2 + b^2 = c^2$, con $c$ ipotenusa e $a$, $b$ cateti
