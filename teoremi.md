@@ -1,6 +1,13 @@
 ## Teoremi
 
-### Retta tangente al grafico in un punto di derivabilità
+- [Retta tangente al grafico in un punto di derivabilità](#retta-tangente-al-grafico-in-un-punto-di-derivabilità)
+- [Teorema di Fermat](#teorema-di-fermat)
+- [Teorema di Rolle](#teorema-di-rolle)
+- [Teorema della media integrale](#teorema-della-media-integrale)
+- [Teorema fondamentale del calcolo integrale](#teorema-fondamentale-del-calcolo-integrale)
+- [Formula fondamentale del calcolo integrale](#formula-fondamentale-del-calcolo-integrale)
+
+## Retta tangente al grafico in un punto di derivabilità
 
 - sia $f : (a, b) \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 - sia $x_0 \in (a, b)$
@@ -19,7 +26,7 @@ Infatti l'equazione della retta passante per i punti $A = (x_0, f(x_0))$ e $B = 
 > - rapporto incrementale
 > - equazione retta
 
-### Teorema di Fermat
+## Teorema di Fermat
 
 - sia $f : [a, b] \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 - sia $x_0 \in (a, b)$
@@ -51,7 +58,7 @@ Dato che per definizione di derivata i due limiti (destro e sinistro) devono ess
 > - passaggio al limite
 > - limite destro e sinistro devono essere uguali
 
-### Teorema di Rolle
+## Teorema di Rolle
 
 - sia $f : [a, b] \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 - sia $f$ continua su $[a, b]$
@@ -79,7 +86,7 @@ Quindi il punto $z$ estremante ($m$ o $M$) interno all'intervallo $(a,b)$ ha per
 > - massimo e minimo assoluto su $f$
 > - per Fermat derivata nulla
 
-### Teorema della media integrale
+## Teorema della media integrale
 
 - sia $f : [a, b] \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 - sia $f$ continua su $[a, b]$
@@ -106,7 +113,7 @@ Quindi $f(z)(b-a) = \int_a^b f(x) \ dx$.
 > - minimo $\leq$ integrale $\leq$ massimo
 > - proprietà di Darboux
 
-### Teorema fondamentale del calcolo integrale
+## Teorema fondamentale del calcolo integrale
 
 - sia $f : [a, b] \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 - sia $f$ continua su $[a,b]$
@@ -152,7 +159,7 @@ _Nota_: se $x_0 = a$ (o se $x_0 = b$), la dimostrazione è uguale alla precedent
 > - per la media integrale $\exists z$
 > - applicazione limite per $z \rightarrow x_0$
 
-### Formula fondamentale del calcolo integrale
+## Formula fondamentale del calcolo integrale
 
 - sia $f : [a, b] \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 - sia $f$ continua su $[a,b]$
