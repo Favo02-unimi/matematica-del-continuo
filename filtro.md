@@ -91,3 +91,31 @@ Se parliamo di _rapporto_ vogliamo il rapporto tra il valore nuovo e il valore v
 _Esempio:_ "Se raddoppio il lato di un triangolo equilatero, di quanto aumenta la sua area?"
 
 Trucco utile nei triangoli equilateri: usare il teorema di Pitagora $a^2 + b^2 = c^2$ per trovare l'altezza, dove $a,b$ sono i cateti e $c$ è l'ipotenusa
+
+## Trigonometria
+
+Basta imparare un "quadrante" (tra $0$ e $\pi/2$) della circonferenza goniometrica, e poi specchiarlo per ottenere i valori di seno e coseno degli altri quadranti:
+
+- seno $sin$:
+	- dominio $-1 < x < 1$
+	- $sin(0) = 0$
+	- $sin(\pi/6) = 1/2$
+	- $sin(\pi/4) = \sqrt{2}/2$
+	- $sin(\pi/3) = \sqrt{3}/2$
+	- $sin(\pi/2) = 1$
+- coseno $cos$:
+	- dominio $-1 < x < 1$
+	- $cos(0) = 1$
+	- $cos(\pi/6) = \sqrt{3}/2$
+	- $cos(\pi/4) = \sqrt{2}/2$
+	- $cos(\pi/3) = 1/2$
+	- $cos(\pi/2) = 0$
+- tangente $tan$:
+	- dominio $\mathbb{R}$
+	- $tan(0) = 0$
+	- $tan(\pi/4) = 1$
+	- $tan(\pi/2) = \infty$
+- arcotangente $arctan$:
+	- dominio $\mathbb{R}$
+	- $arctan(0) = 0$
+	- $arctan(1) = \pi/4$
