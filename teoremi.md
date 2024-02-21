@@ -47,8 +47,8 @@ Pertanto:
 - $\frac{f(x_0+h)-f(x_0)}{h}$ è $\leq 0$ per ogni $h \in (-\delta, 0)$
 
 Passando al limite:
-- $lim_{h \rightarrow 0^+} \frac{f(x_0+h)-f(x_0)}{h} = f'_+(x_0)$, per il teorema della permanenza del segno $f'_+(x_0) \geq 0$
-- $lim_{h \rightarrow 0^-} \frac{f(x_0+h)-f(x_0)}{h} = f'_-(x_0)$, per il teorema della permanenza del segno $f'_-(x_0) \leq 0$
+- $lim_{h \rightarrow 0^+} \frac{f(x_0+h)-f(x_0)}{h} = f'_ +(x_0)$, per il teorema della permanenza del segno $f'_ +(x_0) \geq 0$
+- $lim_{h \rightarrow 0^-} \frac{f(x_0+h)-f(x_0)}{h} = f'_ -(x_0)$, per il teorema della permanenza del segno $f'_ -(x_0) \leq 0$
 
 Dato che per definizione di derivata i due limiti (destro e sinistro) devono essere uguali, allora $f'(x_0) = 0$.
 
@@ -77,7 +77,7 @@ allora $f'(z) = 0 \ \forall z \in (a,b)$.
 
 allora dato che $f$ è continua su $[a,b]$, per il teorema di Weierstrass $f$ ammette un punto di minimo assoluto $m$ e un punto di massimo assoluto $M$.
 
-I punti $m$ e $M$ non possono essere entrambi agli estremi dell'intervallo $[a,b]$, altrimenti $f$ sarebbe costante e di conseguenza si ricadrebbe nel primo caso (assurdo).
+I punti $m$ e $M$ non possono essere entrambi agli estremi dell'intervallo $[a,b]$, altrimenti $f$ sarebbe costante su $[a,b]$ e di conseguenza si ricadrebbe nel primo caso (assurdo).
 
 Quindi il punto $z$ estremante ($m$ o $M$) interno all'intervallo $(a,b)$ ha per il teorema di Fermat $f'(z) = 0$.
 
@@ -98,7 +98,7 @@ Allora $\exists z \in [a,b]$ tale che $f(z)(b-a) = \int_a^b f(x)dx$.
 Dato che $f$ è continua su $[a,b]$, per il teorema di Weierstrass esistono un minimo assoluto $m$ e un massimo assoluto $M$:
 
 - $m \leq f(x) \leq M \ \forall x \in [a,b]$
-- $\int m\ dx \leq \int_a^b f(x) dx \leq \int M\ dx$
+- $\int_a^b m\ dx \leq \int_a^b f(x) dx \leq \int_a^b M\ dx$ _(proprietà di monotonia dell'integrale)_
 - $(b-a) m \leq \int_a^b f(x) dx \leq (b-a) M$
 - $m \leq \frac{1}{(b-a)}\int_a^b f(x) dx \leq M$
 
@@ -106,7 +106,7 @@ Dato che $f$ è continua su $[a,b]$, per la proprietà di Darboux:
 
 $\exists z \in [a,b]$ tale che $f(z) = \frac{1}{(b-a)} \int_a^b f(x) \ dx$,
 
-Quindi $f(z)(b-a) = \int_a^b f(x) \ dx$.
+quindi $f(z)(b-a) = \int_a^b f(x) \ dx$.
 
 > Passaggi chiave:
 > - massimo e minimo di $f$
@@ -119,7 +119,7 @@ Quindi $f(z)(b-a) = \int_a^b f(x) \ dx$.
 - sia $f$ continua su $[a,b]$
 - sia $F(x)$ la sua funzione integrale: $F(x) = \int_a^x f(t)\ dt\ \forall x \in [a,b]$
 
-Allora $F$ è derivabile in $[a,b]$ e ha valore $F'(x) = f(x) \ \forall x \in (a,b)$.
+Allora $F$ è derivabile in $[a,b]$ e ha valore $F'(x) = f(x) \ \forall x \in [a,b]$.
 
 Inoltre, $F$ si dice primitiva di $f$ su $[a,b]$.
 
@@ -173,7 +173,7 @@ Dal teorema fondamentale del calcolo integrale, sappiamo che:
 
 $F(x) = \int_a^x f(t)\ dt \ \forall x \in [a,b]$.
 
-$F$ e $G$ sono entrambe primitive della stessa funzione $f$ su $[a,b]$. Per la seconda conseguenza del teorema di Lagrange, tutte le derivate differiscono solo di una costante additiva $c$, quindi:
+$F$ e $G$ sono entrambe primitive della stessa funzione $f$ su $[a,b]$. Per la seconda conseguenza del teorema di Lagrange, tutte le primitive differiscono solo di una costante additiva $c$, quindi:
 
 - $F(x) = G(x) + c$, $\forall x \in [a,b]$
 - $\int_a^x f(t) \ dt = G(x) + c$
@@ -181,7 +181,7 @@ $F$ e $G$ sono entrambe primitive della stessa funzione $f$ su $[a,b]$. Per la s
 Sostituendo $x = a$:
 
 - $\int_a^a f(t) \ dt = G(a) + c$
-- 0 = G(a) + c$
+- $0 = G(a) + c$
 - $c = -G(a)$
 
 Sostituendo $x = b$:
