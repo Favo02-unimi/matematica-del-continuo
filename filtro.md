@@ -29,15 +29,23 @@ Andiamo a isolare tutti i logaritmi da una parte e tutti i termini noti dall'alt
 
 Una volta che abbiamo una situazione simile a $\log_a (\text{qualcosa in x}) \leq \geq \log_a (\text{costanti})$ andiamo a togliere il logaritmo e consideriamo solo gli argomenti, invertendo il senso della disequazione nel caso $0 < a < 1$
 
-_Esempio:_ $log_2 (4x) + log_2 (5) - 3 < 0$
+Spesso è necessario/utile applicare le proprietà delle potenze:
+- $a^m a^n = a^{n+m}$
+- $\frac{a^m}{a^n} = a^{n-m}$
+- $(a^n)^m = a^{n \cdot m}$
+- $a^n \cdot b^n = (a \cdot b)^n$
+- $\frac{a^n}{b^n} = (\frac{a}{b})^n$
+- _somma o differenza di potenze: in generale nulla_
+
+_Esempio:_ $\log_2 (4x) + \log_2 (5) - 3 < 0$
 
 Isoliamo il logaritmo a sinistra e le costanti e destra, poi uniamo i due logaritmi in uno solo
 
-$log_2 (4x \cdot 5) < 3$
+$\log_2 (4x \cdot 5) < 3$
 
-Trasformiamo il $3$ in un logaritmo in base $2$, ricordandoci che $c = log_a a^c$ e che $log_a b = c \Longleftrightarrow a^c = b$
+Trasformiamo il $3$ in un logaritmo in base $2$, ricordandoci che $c = \log_a a^c$ e che $\log_a b = c \Longleftrightarrow a^c = b$
 
-$log_2 (20x) < log_2 (2^3)$
+$\log_2 (20x) < \log_2 (2^3)$
 
 Ora che abbiamo due logaritmi uguali andiamo a guardare solo gli argomenti, e visto che $2 > 1$ non invertiamo il senso della disequazione
 
@@ -123,14 +131,14 @@ Viceversa, se con l'angolo sono più vicino all'asse $Y$ assegno $\frac{\sqrt{3}
 Vediamo la tabella degli assi e del primo quadrante e vediamo se è vero quanto detto
 
 | Angolo | Sono vicino a | $\cos$ | $\sin$ |
-| :----: | :-----------: | :----: | :----: |
+| :--: | :--: | :--: | :--: |
+| $0$ | - | $1$ | $0$ |
 | $30$ | Asse $X$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}$ |
 | $45$ | Metà | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{2}}{2}$ |
 | $60$ | Asse $Y$ | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}$ |
-| $0$ | - |$1$ | $0$ |
-| $90$ | - |$0$ | $1$ |
-| $180$ | - |$-1$ | $0$ |
-| $270$ | - |$0$ | $-1$ |
+| $90$ | - | $0$ | $1$ |
+| $180$ | - | $-1$ | $0$ |
+| $270$ | - | $0$ | $-1$ |
 
 Per trasformare da radianti a gradi si assegna $\pi = 180$, per fare il viceversa dividere i gradi dati per $15$ e moltiplicare il risultato per $\frac{\pi}{12}$
 
