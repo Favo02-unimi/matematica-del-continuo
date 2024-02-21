@@ -94,28 +94,68 @@ Trucco utile nei triangoli equilateri: usare il teorema di Pitagora $a^2 + b^2 =
 
 ## Trigonometria
 
-Basta imparare un "quadrante" (tra $0$ e $\pi/2$) della circonferenza goniometrica, e poi specchiarlo per ottenere i valori di seno e coseno degli altri quadranti:
+### Seno e coseno
 
-- seno $sin$:
-	- dominio $-1 < x < 1$
-	- $sin(0) = 0$
-	- $sin(\pi/6) = 1/2$
-	- $sin(\pi/4) = \sqrt{2}/2$
-	- $sin(\pi/3) = \sqrt{3}/2$
-	- $sin(\pi/2) = 1$
-- coseno $cos$:
-	- dominio $-1 < x < 1$
-	- $cos(0) = 1$
-	- $cos(\pi/6) = \sqrt{3}/2$
-	- $cos(\pi/4) = \sqrt{2}/2$
-	- $cos(\pi/3) = 1/2$
-	- $cos(\pi/2) = 0$
-- tangente $tan$:
-	- dominio $\mathbb{R}$
-	- $tan(0) = 0$
-	- $tan(\pi/4) = 1$
-	- $tan(\pi/2) = \infty$
-- arcotangente $arctan$:
-	- dominio $\mathbb{R}$
-	- $arctan(0) = 0$
-	- $arctan(1) = \pi/4$
+Non serve imparare tutti i valori di seno e coseno a memoria, ma bastano pochi valori:
+- assi cartesiani
+- $30$ gradi
+- $45$ gradi
+- $60$ gradi
+
+Una volta che conosciamo questi valori riusciamo a ricavare tutti gli altri
+
+I valori possibili che assume un seno o un coseno sono tutti quelli dell'intervallo $[-1,1]$, ma a noi interessano soltanto i valori $-1, 0, 1, \frac{\sqrt{2}}{2}, \frac{\sqrt{3}}{2}$ e $\frac{1}{2}$
+
+Per quanto riguarda gli assi cartesiani è facile: se sono sull'asse $X$ annullo il seno e ho coseno $\pm 1$ (positivo se sono a destra dello 0, negativo altrimenti), se sono sull'asse $Y$ è il contrario
+
+Per quanto riguarda i tre valori mancanti, possiamo dire che vanno "a coppie": $\frac{\sqrt{2}}{2}$ fa coppia con se stesso, mentre gli due sono sempre assieme
+
+Quando si è "a metà quadrante", quindi ogni volta che i gradi finiscono con un $5$ ($45, 135, 225, 315$), seno e coseno valgono $\frac{\sqrt{2}}{2}$, ovviamente con i segni in base al quadrante di appartenenza
+
+Quando invece sono più vicino ad un asse rispetto ad un altro dobbiamo assegnare due valori: $\frac{\sqrt{3}}{2}$ e $\frac{1}{2}$
+
+Tra i due, il valore più grande è $\frac{\sqrt{3}}{2}$, e questo valore lo assume "la funzione più vicina all'asse che lo descrive", mentre $\frac{1}{2}$ lo prende l'altra funzione
+
+In poche parole: visto che il coseno si calcola sull'asse $X$, e il seno si calcola sull'asse $Y$, se con l'angolo sono più vicino all'asse $X$ assegno $\frac{\sqrt{3}}{2}$ al coseno, e $\frac{1}{2}$ al seno
+
+Viceversa, se con l'angolo sono più vicino all'asse $Y$ assegno $\frac{\sqrt{3}}{2}$ al seno, e $\frac{1}{2}$ al coseno
+
+Vediamo la tabella degli assi e del primo quadrante e vediamo se è vero quanto detto
+
+| Angolo | Sono vicino a | $\cos$ | $\sin$ |
+| :----: | :-----------: | :----: | :----: |
+| $30$ | Asse $X$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}$ |
+| $45$ | Metà | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{2}}{2}$ |
+| $60$ | Asse $Y$ | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}$ |
+| $0$ | - |$1$ | $0$ |
+| $90$ | - |$0$ | $1$ |
+| $180$ | - |$-1$ | $0$ |
+| $270$ | - |$0$ | $-1$ |
+
+Per trasformare da radianti a gradi si assegna $\pi = 180$, per fare il viceversa dividere i gradi dati per $15$ e moltiplicare il risultato per $\frac{\pi}{12}$
+
+_Esempio 1:_ $\frac{4 \pi}{3}$ diventa $\frac{4 \cdot 180}{3} = 240$
+
+_Esempio 2:_ $\frac{240}{15} = 16$ diventa $16 \cdot \frac{\pi}{12} = \frac{4 \pi}{3}$
+
+Un altro modo, forse più veloce, è usare la formula $\text{gradi} = \frac{radianti \cdot \pi}{180}$
+
+### Tangente e cotangente
+
+Non serve ricordarsi i valori della tangente: basta scrivere i valori di $\sin(x)$ e $\cos(x)$ e poi calcolare la tangente come $\frac{\sin(x)}{\cos(x)}$
+
+Bisogna ricordarsi il CE: avendo il coseno al denominatore dobbiamo garantire che sia diverso da $0$, quindi dobbiamo evitare l'asse $Y$ e quindi $x \neq \frac{\pi}{2} + k \pi$
+
+Notiamo come la tangente sia $\pi$-periodica, a differenza di seno e coseno che sono $2\pi$-periodiche
+
+La cotangente si calcola nello stesso modo, ma invertendo numeratore e denominatore, e modificando il CE imponendo il seno diverso da $0$, quindi dobbiamo evitare l'asse $X$ e quindi $x \neq k \pi$
+
+### Arcotangente e arcocotangente
+
+L'unica funzione utile è l'arcotangente, che ha dominio $\mathbb{R}$ ma è limitata nel codominio nell'intervallo $[-\frac{\pi}{4}, \frac{\pi}{4}]$
+
+La funzione è monotona crescente, passa per l'origine, vale $\frac{\pi}{4}$ se calcolata in $1$ e rispetta la relazione
+
+$\arctan(x) + \arctan(\frac{1}{x}) = \begin{cases} -\frac{\pi}{2} & \text{se } x < 0 \\ +\frac{\pi}{2} & \text{se } x > 0 \end{cases}$
+
+Arcocotangente ⚰️
