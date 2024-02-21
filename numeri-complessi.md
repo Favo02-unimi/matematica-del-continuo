@@ -13,15 +13,20 @@ Rendono possibili le radici negative: $x^2 = -1$, $i = \sqrt{-1}$
 
 ### Forma trigonometrica (forma polare)
 
-- $z = \rho(cos\Theta + i\ sin\Theta)$
+- $z = \rho(\cos\Theta + i\ \sin\Theta)$
 	- con $\rho \in \mathbb{R} \geq 0$
 	- con $\rho$ angolo, tale che $-\pi < \Theta \leq \pi$ oppure $0 \leq \Theta < 2\pi$
-- $z^4 = \rho^4(cos(4\Theta) + i \ sin(4\Theta))$
-- $\bar{z} = \rho(cos\Theta - i \ sin\Theta)$ oppure $\rho(\cos(-\Theta) + i\ sin(-\Theta))$
+- $z^4 = \rho^4(\cos(4\Theta) + i \ \sin(4\Theta))$
+- $\bar{z} = \rho(\cos\Theta - i \ \sin\Theta)$ oppure $\rho(\cos(-\Theta) + i\ \sin(-\Theta))$
 - $|z| = \rho$
-- $i = \rho(cos(\pi/2) + i\ sin(\pi/2))$, quindi ($cos$ = $0$ e $sin$ = $1$)
-- moltiplicazione: $\rho_1\rho_2(cos(\Theta_1 + \Theta_2) + i\ sin(\Theta_1 + \Theta_2))$
-- divisione: $\frac{\rho_1}{\rho_2}(cos(\Theta_1 - \Theta_2) + i\ sin(\Theta_1 - \Theta_2))$
+- $i = 1(\cos(\pi/2) + i\ \sin(\pi/2))$, quindi ($\cos$ = $0$ e $\sin$ = $1$)
+- $a = a(\cos(0) + i\ \sin(0))$
+	- $1 = \cos(0) + i\ \sin(0)$
+	- $4 = 4(\cos(0) + i\ \sin(0))$
+	- $3/2 = \frac{3}{2}(\cos(0) + i\ \sin(0))$
+	- $-3/2 = \frac{3}{2(\cos(0) + i\ \sin(0))}$
+- moltiplicazione: $\rho_1\rho_2(\cos(\Theta_1 + \Theta_2) + i\ \sin(\Theta_1 + \Theta_2))$
+- divisione: $\frac{\rho_1}{\rho_2}(\cos(\Theta_1 - \Theta_2) + i\ \sin(\Theta_1 - \Theta_2))$
 
 ### Forma esponenziale
 
@@ -47,12 +52,13 @@ _non la so :)_
 - trovare tutti i $\theta$
 	- sostituire $k$ con $1, 2, ...$ (in "modulo" $2\pi$)
 	- fino a trovare una soluzione già trovata (a meno di $2k\pi$)
+	- se $\rho < 0$ allora le soluzioni sulla circonferenza sono specchiate _(il "modulo" dei vettori è negativo, quindi sono invertiti)_
 - ricostruire forma trigonometrica per ogni $\theta$ trovato
-	- $\rho(cos(\theta) + i\ sin(\theta))$
-- calcolare $cos$ e $sin$ e tornare in forma algebrica (basta memorizzare un quadrante):
-	- $0° = 0$: $sin = 0$, $cos = 1$
-	- $30° = \pi/6$: $sin = 1/2$, $cos = \sqrt{3}/2$
-	- $45° = \pi/4$: $sin = \sqrt{2}/2$, $cos = \sqrt{2}/2$
-	- $60° = \pi/3$: $sin = \sqrt{3}/2$, $cos = 1/2$
-	- $90° = \pi/2$: $sin = 1$, $cos = 0$
+	- $\rho(\cos(\theta) + i\ \sin(\theta))$
+- calcolare $\cos$ e $\sin$ e tornare in forma algebrica (basta memorizzare un quadrante):
+	- $0° = 0$: $\sin = 0$, $\cos = 1$
+	- $30° = \pi/6$: $\sin = 1/2$, $\cos = \sqrt{3}/2$
+	- $45° = \pi/4$: $\sin = \sqrt{2}/2$, $\cos = \sqrt{2}/2$
+	- $60° = \pi/3$: $\sin = \sqrt{3}/2$, $\cos = 1/2$
+	- $90° = \pi/2$: $\sin = 1$, $\cos = 0$
 - controllare se $0$ è soluzione (e in caso aggiungerla alle soluzioni)

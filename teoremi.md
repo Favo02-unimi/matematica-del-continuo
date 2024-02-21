@@ -12,7 +12,7 @@
 - sia $f : (a, b) \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 - sia $x_0 \in (a, b)$
 
-Allora $f$ si dice derivabile in $x_0$ se esiste finito il limite $lim_{h \rightarrow 0} \frac{f(x_0 + h) - f(x_0)}{h}$.
+Allora $f$ si dice derivabile in $x_0$ se esiste finito il limite $\displaystyle\lim_{h \rightarrow 0} \frac{f(x_0 + h) - f(x_0)}{h}$.
 
 Questo limite si chiama derivata e si indica con $f'(x_0)$, $\frac{df}{dx}(x_0)$, $Df(x_0)$.
 
@@ -47,8 +47,8 @@ Pertanto:
 - $\frac{f(x_0+h)-f(x_0)}{h}$ è $\leq 0$ per ogni $h \in (-\delta, 0)$
 
 Passando al limite:
-- $lim_{h \rightarrow 0^+} \frac{f(x_0+h)-f(x_0)}{h} = f'_ +(x_0)$, per il teorema della permanenza del segno $f'_ +(x_0) \geq 0$
-- $lim_{h \rightarrow 0^-} \frac{f(x_0+h)-f(x_0)}{h} = f'_ -(x_0)$, per il teorema della permanenza del segno $f'_ -(x_0) \leq 0$
+- $\displaystyle\lim_{h \rightarrow 0^+} \frac{f(x_0+h)-f(x_0)}{h} = f'_ +(x_0)$, per il teorema della permanenza del segno $f'_ +(x_0) \geq 0$
+- $\displaystyle\lim_{h \rightarrow 0^-} \frac{f(x_0+h)-f(x_0)}{h} = f'_ -(x_0)$, per il teorema della permanenza del segno $f'_ -(x_0) \leq 0$
 
 Dato che per definizione di derivata i due limiti (destro e sinistro) devono essere uguali, allora $f'(x_0) = 0$.
 
@@ -143,11 +143,11 @@ tale che $f(z)$ sia la media integrale.
 
 Quindi passando al limite per $h \rightarrow 0$ del rapporto incrementale:
 
-- $lim_{h \rightarrow 0} \frac{F(x_0+h) - F(x_0)}{h}$
-- $lim_{h \rightarrow 0}\frac{1}{h} (\int_{x_0}^{x_0+h} f(x)\ dx)$
-- $lim_{h \rightarrow 0}\frac{1}{h}(x_0+h-x_0)(f(z))$
-- $lim_{h \rightarrow 0}f(z)$
-- $lim_{z \rightarrow x_0}f(z)$
+- $\displaystyle\lim_{h \rightarrow 0} \frac{F(x_0+h) - F(x_0)}{h}$
+- $\displaystyle\lim_{h \rightarrow 0}\frac{1}{h} (\int_{x_0}^{x_0+h} f(x)\ dx)$
+- $\displaystyle\lim_{h \rightarrow 0}\frac{1}{h}(x_0+h-x_0)(f(z))$
+- $\displaystyle\lim_{h \rightarrow 0}f(z)$
+- $\displaystyle\lim_{z \rightarrow x_0}f(z)$
 - $f(x_0)$
 
 _Nota_: se $x_0 = a$ (o se $x_0 = b$), la dimostrazione è uguale alla precedente considerando solo il limite destro (o sinistro), poiché $h > 0$ (o $h < 0$).
