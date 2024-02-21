@@ -18,7 +18,7 @@ Questo limite si chiama derivata e si indica con $f'(x_0)$, $\frac{df}{dx}(x_0)$
 
 **Significato geometrico**:
 
-Se $f$ è derivabile in $x_0$ allora il grafico di $f$ ammette nel punto $(x_0, f(x_0))$ retta tangente di equazione $y = f'(x_0)(x-x_0) + f(x)$.
+Se $f$ è derivabile in $x_0$ allora il grafico di $f$ ammette nel punto $(x_0, f(x_0))$ retta tangente di equazione $y = f'(x_0)(x-x_0) + f(x_0)$.
 
 Infatti l'equazione della retta passante per i punti $A = (x_0, f(x_0))$ e $B = (x_0+h, f(x_0+h))$ è $y = \frac{f(x_0+h) - f(x_0)}{h} (x - x_0) + f(x_0)$.
 
