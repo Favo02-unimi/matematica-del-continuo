@@ -2,6 +2,17 @@
 
 ___RICORDARSI SEMPRE LE CONDIZIONI DI ESISTENZA (DOMINIO)___
 
+## Proprietà delle potenze
+
+In quasi tutti gli esercizi è necessario/utile applicare le proprietà delle potenze:
+- $a^m \cdot a^n = a^{n+m}$, prodotto con stessa base
+- $\frac{a^m}{a^n} = a^{m-n}$, rapporto con stessa base
+- $(a^n)^m = a^{n \cdot m}$, potenza di potenza
+- $a^n \cdot b^n = (a \cdot b)^n$, prodotto con stesso esponente
+- $\frac{a^n}{b^n} = (\frac{a}{b})^n$, rapporto con stesso esponente
+
+In generale la somma/differenza di potenze non può essere semplificata con qualche proprietà, ma solo con qualche raccoglimento
+
 ## Disequazioni con sostituzione
 
 Se troviamo complicato risolvere una disequazione con fattori esponenziali/logaritmici/trigonometrici dobbiamo "tornare" nel mondo della potenze facendo una __sostituzione__
@@ -28,14 +39,6 @@ Andiamo a isolare tutti i logaritmi da una parte e tutti i termini noti dall'alt
 - trasformare le costanti in un logaritmo che abbia la stessa base del logaritmo dalla parte opposta
 
 Una volta che abbiamo una situazione simile a $\log_a (\text{qualcosa in x}) \leq \geq \log_a (\text{costanti})$ andiamo a togliere il logaritmo e consideriamo solo gli argomenti, invertendo il senso della disequazione nel caso $0 < a < 1$
-
-Spesso è necessario/utile applicare le proprietà delle potenze:
-- $a^m a^n = a^{n+m}$
-- $\frac{a^m}{a^n} = a^{n-m}$
-- $(a^n)^m = a^{n \cdot m}$
-- $a^n \cdot b^n = (a \cdot b)^n$
-- $\frac{a^n}{b^n} = (\frac{a}{b})^n$
-- _somma o differenza di potenze: in generale nulla_
 
 _Esempio:_ $\log_2 (4x) + \log_2 (5) - 3 < 0$
 
