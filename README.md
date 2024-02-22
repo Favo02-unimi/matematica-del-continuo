@@ -8,4 +8,5 @@ Cheatsheet fatta male per matematica del continuo (Analisi 1 + un pochino di Ana
 - [Limiti](limiti.md)
 - [Numeri complessi](numeri-complessi.md)
 - [Serie](serie.md)
+- [Simboli di Landau](simboli-di-landau.md)
 - [Teoremi](teoremi.md)
