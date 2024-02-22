@@ -163,7 +163,7 @@ _Nota_: se $x_0 = a$ (o se $x_0 = b$), la dimostrazione è uguale alla precedent
 
 - sia $f : [a, b] \subseteq \mathbb{R} \rightarrow \mathbb{R}$
 - sia $f$ continua su $[a,b]$
-- sia $G(x)$ una sua qualsiasi primitiva di $f$ su $[a,b]$
+- sia $G(x)$ una qualsiasi primitiva di $f$ su $[a,b]$
 
 Allora $\int_a^b f(t)\ dt = G(b) - G(a)$.
 
