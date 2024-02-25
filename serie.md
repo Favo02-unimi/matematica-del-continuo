@@ -42,23 +42,22 @@
 
 _Il raggio di convergenza misura l'estensione dell'insieme aperto più grande su cui la serie converge._
 
- - Calcolare raggio di convergenza: $\displaystyle\sum_{n=1}^{\infty} a_n x^n$
+ - Calcolare raggio di convergenza di: $\displaystyle\sum_{n=1}^{\infty} a_n x^n$
 	 - isolare $x^n$ e $a_n$
-	 - calcolare $l = \displaystyle\lim_{n \rightarrow \infty} \sup(\sqrt[n]{|a_n|)}$
-		 - se $l = 0$ allora $r = +\infty$
-		 - se $0 < l < +\infty$ allora $r = \frac{1}{l}$
-		 - se $l = +\infty$ allora $r = 0$
-	 - trucchi per calcolare $\displaystyle\lim_{n \rightarrow \infty}\sqrt[n]{|a_n|)}$
-		 - cercare di rimuovere il valore assoluto _(quasi sempre senza conseguenze)_
-		 - trasformare radice in esponenziale: $\displaystyle\lim_{n \rightarrow \infty}(a_n)^{\frac{1}{n}}$
-		 - applicare logaritmo al limite: $\displaystyle\ln \lim_{n \rightarrow \infty}(a_n)^{\frac{1}{n}}$
-			 - $\displaystyle\lim_{x \rightarrow x_0} t(x)$ = $t(x_0)$ = $t(\displaystyle\lim_{x \rightarrow x_0}x)$
-		 - scambiare logaritmo e limite: $\displaystyle\lim_{n \rightarrow \infty}\ln ((a_n)^{\frac{1}{n}})$
-			 - proprietà funzioni continue: $\displaystyle\lim_{x \rightarrow x_0} t(x)$ = $t(x_0)$ = $t(\displaystyle\lim_{x \rightarrow x_0}x)$
-		 - tirare fuori esponente: $\displaystyle\lim_{n \rightarrow \infty}\ \frac{1}{n}\ln (a_n)$
-			 - proprietà logaritmi: $\ln ((a)^2)$ = $2 \ln(a)$
-		 - risolvere: $\displaystyle\lim_{n \rightarrow \infty}\ \frac{1}{n}\ln (a_n) = 0$
-		 - applicare in modo inverso il logaritmo:
-			 - dato che $\ln(\displaystyle\lim_{n \rightarrow \infty}(a_n)^{\frac{1}{n}}) = 0$
-			 - ovvero $\ln(x) = 0$, quindi $x = 1$
-			 - quindi $x = \displaystyle\lim_{n \rightarrow \infty}(a_n)^{\frac{1}{n}} = 1$
+	 - calcolare $L$ utilizzando:
+		 - criterio del rapporto: $\displaystyle\lim_{n \rightarrow \infty} (\frac{a_{n+1}}{a_n}) = L$
+		 - criterio della radice: $\displaystyle\lim_{n \rightarrow \infty} (\sqrt[n]{a_n}) = L$
+	 - raggio $R$: reciproco di $L$: $\frac{1}{L}$
+
+### Insieme di convergenza
+
+- Calcolare l'insieme di convergenza di: $\displaystyle\sum_{n=1}^{\infty} a_n x^n$
+	- calcolare il raggio di convergenza $R$
+	- controllare se gli estremi dell'intervallo sono inclusi:
+		- sostituendo $x^n$ con $-R$, calcolare: $\displaystyle\lim_{n \rightarrow \infty}a_n \cdot R^n = L$
+			- se $L = 0$ allora l'estremo destro è incluso $R]$
+			- se $L \neq 0$ allora l'estremo destro non è incluso $R)$
+		- sostituendo $x^n$ con $-R$, calcolare: $\displaystyle\lim_{n \rightarrow \infty}a_n \cdot (-R)^n = L$
+			- se $L = 0$ allora l'estremo sinistro è incluso $[-R$
+			- se $L \neq 0$ allora l'estremo sinistro non è incluso $(-R$
+	- insieme di convergenza: $[-R, R)$ oppure $(-R, R]$ oppure $(-R, R)$
