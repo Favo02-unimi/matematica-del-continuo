@@ -22,9 +22,20 @@ $f(x)$ è o-piccolo di $g(x)$ per $x \to x_0$ se e solo se il limite del rapport
 
 $$f(x) = o(g(x)) \Longleftrightarrow \displaystyle\lim_{x \to x_0} \frac{f(x)}{g(x)} = 0$$
 
+## Omega $\Omega$
+
+$f(x)$ è omega di $g(x)$ per $x \to x_0$ se e solo se il limite del rapporto tra $f(x)$ e $g(x)$ è uguale a $\infty$
+
+$$f(x) = \Omega(g(x)) \Longleftrightarrow \displaystyle\lim_{x \to x_0} \frac{f(x)}{g(x)} = \infty$$
+
+## Theta-grande $\Theta$
+
+$f(x)$ è theta-grande di $g(x)$ per $x \to x_0$ se e solo se il limite del rapporto tra $f(x)$ e $g(x)$ è uguale a un numero finito $k$
+
+$$f(x) = \Theta(g(x)) \Longleftrightarrow \displaystyle\lim_{x \to x_0} \frac{f(x)}{g(x)} = k$$
+
 ## Altri simboli
 
-Esistono altri simboli che non abbiamo trattato, ma che sono più utili nel corso di Algoritmi e Strutture Dati:
+Esistono altri simboli che non abbiamo trattato:
 - equigrandezza $\asymp$
-- omega piccolo $\omega$ e grande $\Omega$
-- theta grande $\Theta$
+- omega piccolo $\omega$
