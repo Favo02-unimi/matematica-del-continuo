@@ -1,11 +1,26 @@
 ## Teoremi
 
+_Enunciato e dimostrazione per scritto e orale ridotto:_
 - [Retta tangente al grafico in un punto di derivabilità](#retta-tangente-al-grafico-in-un-punto-di-derivabilità)
 - [Teorema di Fermat](#teorema-di-fermat)
 - [Teorema di Rolle](#teorema-di-rolle)
 - [Teorema della media integrale](#teorema-della-media-integrale)
 - [Teorema fondamentale del calcolo integrale](#teorema-fondamentale-del-calcolo-integrale)
 - [Formula fondamentale del calcolo integrale](#formula-fondamentale-del-calcolo-integrale)
+
+_Enunciato per orale ridotto e dimostrazione per orale completo:_
+- [Teorema dell'unicità del limite di successioni convergenti](#teorema-dellunicità-del-limite-di-successioni-convergenti)
+- [Teorema della permanenza del segno](#teorema-della-permanenza-del-segno)
+- [Teorema del confronto](#teorema-del-confronto)
+- [Teorema di Darboux o dei valori intermedi](#teorema-di-darboux-o-dei-valori-intermedi)
+- [Relazione tra derivabilità e continuità](#relazione-tra-derivabilità-e-continuità)
+- [Teorema di Lagrange o del valor medio](#teorema-di-lagrange-o-del-valor-medio)
+  - [(1) Funzioni con derivata nulla su un intervallo sono costanti](#1-funzioni-con-derivata-nulla-su-un-intervallo-sono-costanti)
+  - [(2) Funzioni con derivate coincidenti su intervallo differiscono per una costante additiva](#2-funzioni-con-derivate-coincidenti-su-intervallo-differiscono-per-una-costante-additiva)
+  - [(3) Relazioni tra monotonia e segno della derivata su un intervallo](#3-relazioni-tra-monotonia-e-segno-della-derivata-su-un-intervallo)
+- [Prima formula dell'incremento finito](#prima-formula-dellincremento-finito)
+- [Seconda formula dell'incremento finito](#seconda-formula-dellincremento-finito)
+
 
 ## Retta tangente al grafico in un punto di derivabilità
 
@@ -194,3 +209,109 @@ Sostituendo $x = b$:
 > - seconda conseguenza teorema di Lagrange: le primitive differiscono di $c$
 > - sostituire $x = a$
 > - sostituire $x = b$
+
+## Teorema dell'unicità del limite di successioni convergenti
+
+- sia $\displaystyle \lim_{n \rightarrow +\infty} a_n = a$
+- sia $\displaystyle \lim_{n \rightarrow +\infty} a_n = b$
+
+Allora $a = b$.
+
+> Se il limite esiste (finito o infinito), allora è unico
+
+## Teorema della permanenza del segno
+
+- sia $\displaystyle \lim_{n \rightarrow +\infty} a_n = a \in \mathbb{R}$
+
+Se $a > 0$ allora $\exists n_0$ tale che $\forall n > n_0 \ a_n > 0$.
+
+Se $a < 0$ allora $\exists n_0$ tale che $\forall n > n_0 \ a_n < 0$.
+
+> Una successione che tende a un limite positivo (negativo) ha definitivamente soltanto termini positivi (negativi), quindi la funzione è localmente concorde con il segno del limite
+
+## Teorema del confronto
+
+- siano $a_n$, $b_n$, $c_n$ tre successioni
+
+1. Se $a_n \leq b_n$ e $\displaystyle \lim_{n \rightarrow +\infty} a_n = +\infty$ allora $\displaystyle \lim_{n \rightarrow +\infty} b_n = +\infty$
+2. Se $b_n \leq c_n$ e $\displaystyle \lim_{n \rightarrow +\infty} c_n = -\infty$ allora $\displaystyle \lim_{n \rightarrow +\infty} b_n = -\infty$
+3. Se $a_n \leq b_n \leq c_n$ e $\displaystyle \lim_{n \rightarrow +\infty} a_n = \lim_{n \rightarrow +\infty} c_n = \alpha$ allora $\displaystyle \lim_{n \rightarrow +\infty} b_n = \alpha$ _(Teorema dei due carabinieri)_
+
+> Calcolare il limite di una successione (o funzione) confrontandola con altre due che "si stringono sempre di più" intorno a quella data
+
+## Teorema di Darboux o dei valori intermedi
+
+- sia $f : [a,b] \subseteq \mathbb{R} \rightarrow \mathbb{R}$
+- sia $f$ continua su $[a,b]$
+
+Allora $f$ assume tutti i valori compresi tra $f(a)$ e $f(b)$.
+
+> L'immagine di $f$ assume tutti i valori compresi tra le immagini degli estremi del dominio
+
+## Relazione tra derivabilità e continuità
+
+- sia $f : (a,b) \subseteq \mathbb{R} \rightarrow \mathbb{R}$
+- sia $x_0 \in (a,b)$
+
+Allora se $f(x)$ è derivabile in $x_0$, allora $f$ è continua in $x_0$.
+
+> La derivabilità implica sempre la continuità (condizione sufficiente), mentre la continua non implica necessariamente la derivabilità (condizione necessaria)
+
+## Teorema di Lagrange o del valor medio
+
+- sia $f : [a,b] \subseteq \mathbb{R} \rightarrow \mathbb{R}$
+- sia $f$ continua su $[a,b]$
+- sia $f$ derivabile in $(a,b)$
+
+Allora $\exists x_0 \in (a,b)$ tale che $f'(x_0) = \frac{f(b) - f(a)}{b-a}$ ovvero $f(b) - f(a) = f'(x_0)(b-a)$.
+
+> Esiste almeno un punto in cui la tangente al grafico di una funzione è parallela alla secante passante per gli estremi del dominio della funzione
+
+## Conseguenze del teorema di Lagrange
+
+### (1) Funzioni con derivata nulla su un intervallo sono costanti
+
+- sia $f$ continua su $[a,b]$
+- sia $f$ derivabile su $(a,b)$
+- sia $f'(x) = 0 \ \forall x \in (a,b)$
+
+Allora $f(x) = c \ \forall x \in [a,b]$.
+
+> La funzione è costante sull'intervallo in cui la derivata è nulla
+
+### (2) Funzioni con derivate coincidenti su intervallo differiscono per una costante additiva
+
+- siano $f$ e $g$ continue su $[a,b]$
+- siano $f$ e $g$ derivabili su $(a,b)$
+- sia $f'(x) = g'(x) \ \forall x \in (a,b)$
+
+Allora $f$ e $g$ differiscono di una costante additiva $c$: $\exists c$ tale che $f(x) = g(x) + c$.
+
+> Se due funzioni hanno la stessa derivata su un intervallo, allora differiscono per una costante additiva
+
+### (3) Relazioni tra monotonia e segno della derivata su un intervallo
+
+- sia $f$ continua su $[a,b]$
+- sia $f$ derivabile su $(a,b)$
+
+Allora valgono:
+1. $f'(x) \geq 0 \ \forall x \in (a,b) \Longleftrightarrow f$ è monotona crescente su $(a,b)$
+2. $f'(x) \leq 0 \ \forall x \in (a,b) \Longleftrightarrow f$ è monotona decrescente su $(a,b)$
+3. $f'(x) > 0 \ \forall x \in (a,b) \Longleftrightarrow f$ è monotona strettamente crescente su $(a,b)$
+4. $f'(x) < 0 \ \forall x \in (a,b) \Longleftrightarrow f$ è monotona strettamente decrescente su $(a,b)$.
+
+> La derivata di una funzione su un intervallo ne descrive la sua monotonia
+
+## Prima formula dell'incremento finito
+
+- sia $f : (a,b) \subseteq \mathbb{R} \rightarrow \mathbb{R}$
+- sia $x_0 \in (a,b)$
+- sia $f$ derivabile in $x_0$
+
+Allora vale la formula: $f(x) = f(x_0) + f'(x_0)(x - x_0) + o(x - x_0)$ per $x \rightarrow x_0$.
+
+## Seconda formula dell'incremento finito
+
+- sia $f$ derivabile in un intorno di $x_0 : I_\delta(x_0) = (x_0 - \delta, x_0 + \delta)$ con $\delta > 0$
+
+Allora $\forall x \in (x_0 - \delta, x_0 + \delta) \ \exists z \in \begin{cases} (x_0, x) \text{ se } x > x_0 \\ (x, x_0) \text{ se } x < x_0 \end{cases}$ tale per cui $f(x) = f(x_0) + f'(z)(x - x_0)$.
