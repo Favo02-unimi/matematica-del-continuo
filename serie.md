@@ -53,7 +53,7 @@ _Il raggio di convergenza misura l'estensione dell'insieme aperto più grande su
 
 - Calcolare l'insieme di convergenza di: $\displaystyle\sum_{n=1}^{\infty} a_n x^n$
 	- calcolare il raggio di convergenza $R$
-	- controllare se gli estremi dell'intervallo sono inclusi:
+	- controllare se gli estremi dell'intervallo sono inclusi: __*non sono sicuro della correttezza dei passaggi seguenti*__
 		- sostituendo $x^n$ con $-R$, calcolare: $\displaystyle\lim_{n \rightarrow \infty}a_n \cdot R^n = L$
 			- se $L = 0$ allora l'estremo destro è incluso $R]$
 			- se $L \neq 0$ allora l'estremo destro non è incluso $R)$
